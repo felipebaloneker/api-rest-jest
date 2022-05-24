@@ -18,8 +18,12 @@ module.exports = {
         unique: true,
         allowNull: false,
       },
-      password_hase: {
+      password_hash: {
         type: Sequelize.STRING,
+        allowNull: false,
+      },
+      created_at: {
+        type: Sequelize.DATE,
         allowNull: false,
       },
       updated_at: {
