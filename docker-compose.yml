@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  postgres:
+    container_name: nodejest
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_DB=nodejest
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=docker
+    ports:
+      - 5432:5432
